@@ -1,0 +1,127 @@
+html,body{
+    margin:0;
+    max-width: 100%;
+    overflow-x: hidden;
+    color: white;
+  height: 100vh;
+}
+
+body{
+    background-image: url("assets/crew/background-crew-desktop.jpg") ;
+    overflow-y: hidden;
+}
+.activepg{
+    border-bottom: 4px solid #fff;
+}
+.meet{
+    position: absolute;
+  top:15%;
+  left:12%;
+  font-weight: 100;
+}
+.item-container{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.item1{
+    width: 60%;
+}
+.item2{
+    width:40%;
+}
+.person1-img ,.person2-img,.person3-img,.person4-img {
+    position: relative;
+   height: 470px;
+   bottom:40px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    top:33%;
+    height: 30%;
+    width:10%;
+}
+
+
+
+
+/* for Tablet 768 X 1028 */
+
+@media all and (min-width:376px) and (max-width:769px){
+    
+    body,html{
+        background-image: url("assets/crew/background-crew-tablet.jpg");
+    }
+    .meet{
+        position: relative;
+        text-align: left;
+        left:10%;
+        top: 45px;
+      }
+      .item-container{
+        flex-direction: column;
+        margin-left: 0;
+        margin-top:18%;
+      }
+      .item1,.item2{
+        width:100%;
+      }
+   
+    .content{
+        text-align: center;
+    }
+   
+    .carousel-control-next, .carousel-control-prev{
+        top:22%;
+    }
+    .person1-img ,.person2-img,.person3-img,.person4-img {
+        position: relative;
+       height: auto;
+       width:65%;
+       bottom: 0px;
+    }
+}
+
+
+/* for mobile */
+
+@media all and (max-width:376px){
+    body,html{
+     background-image: url("assets/crew/background-crew-mobile.jpg");
+     height: 100vh;
+    }
+    .meet{
+        position: relative;
+        top:40px;
+        left: 0%;
+      }
+    .item-container{
+        flex-direction: column;
+        margin-left: 0;
+        margin-top:14%;
+    }
+    .item1{
+    order: 2;
+    width: 100%;
+    }
+    .item2{
+        order: 1;
+        width:100%;
+    }
+    .person1-img ,.person2-img,.person3-img,.person4-img {
+        position: relative;
+       height: 200px;
+       bottom: 0;
+       
+    }
+    h3{
+        font-size: 36px;
+    }
+    hr{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    
+    }

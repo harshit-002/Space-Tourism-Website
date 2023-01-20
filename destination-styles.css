@@ -1,0 +1,142 @@
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+    color: white;
+
+}
+body{
+    background-image: url("assets/destination/background-destination-desktop.jpg") ;
+}
+.destination-page{
+    display: block;
+    height: 100vh;
+   }
+
+.pick{
+position: absolute;
+top:15%;
+left:12%;
+font-weight: 100;
+}
+
+
+.item-container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10%;
+}
+
+.item1,.item2{
+    width: 40%;
+}
+.content{
+    padding: 0;
+}
+.data-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6%;
+}
+.data1,.data2{
+    width: 50%;
+}
+hr{
+    width: 100%;
+}
+
+.destination-navbar{
+    display: flex;
+    justify-content: flex-start;
+    column-gap:7.4% ;
+}
+a{
+    text-decoration: none;
+    color: inherit; 
+    cursor: pointer;
+  }
+a:hover{
+    text-decoration: none;
+    color: white;
+  }
+
+  .activepg{
+    border-bottom: 4px solid white;
+  }
+
+/* for Tablet */
+@media all and (min-width:376px) and (max-width:769px){
+    body {
+        text-align: center; 
+        background-image: url("assets/destination/background-destination-tablet.jpg") ;
+        }
+        
+.item-container{
+    flex-direction: column;
+    margin-top: 25%;
+}
+
+.choosedestination{
+    margin: 2% 30%;
+}
+.destination-navbar{
+justify-content: center;
+margin:5%;
+column-gap: 5%;
+}
+    .item1{
+    order:1;
+}
+.item1 img{
+    width: 100%;
+    height: auto;
+}
+
+.item2{
+    order:2;
+    width: 80%;
+}
+
+
+
+}
+
+
+/*for mobile */
+@media all and (max-width: 376px) {
+    body {
+    text-align: center; 
+    background-image: url("assets/destination/background-destination-mobile.jpg") ;
+    }
+    
+    .item-container{
+        flex-direction: column;
+        margin:0;
+        margin-top: 20%;
+    }
+.item1,.item2{
+width:100%;
+}
+.planet-img{
+    max-width: 50%;
+    height: auto;
+}
+
+.destination-navbar{
+justify-content: center;
+margin:5%;
+column-gap: 5%;
+}
+    .pick{
+      position: relative;
+      top:45px;
+      left: 0%;
+    }
+    h2{
+        font-size: 60px; 
+    }
+    .content{
+        padding:12px;
+    }
+   
+}
